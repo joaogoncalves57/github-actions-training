@@ -16,4 +16,4 @@ jobs:
           who-to-greet: 'NB27125'
 
       - name: Output from docker container
-        run: echo "The time was ${{ steps.hello-action.time }} when the action returned hello"
+        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action returned hello."
